@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Thindom : Simple library to create DOM elements really fast with chaining. " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Thindom</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/somecallmechief/ThinDOM">View on GitHub</a>
+
+          <h1 id="project_title">Thindom</h1>
+          <h2 id="project_tagline">Simple library to create DOM elements really fast with chaining. </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/somecallmechief/ThinDOM/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/somecallmechief/ThinDOM/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="thindom-a-thin-dom-wrapper" class="anchor" href="#thindom-a-thin-dom-wrapper"><span class="octicon octicon-link"></span></a>ThinDOM: a thin DOM wrapper</h2>
+
+<p>Inspired by jQuery, this simple library lets you create DOM elements really fast, with
+significantly more expressiveness than native DOM methods.</p>
+
+<p><img src="http://i.imgur.com/nFw39JP.png" alt="How fast? Super fast."></p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>
+captionDOM = ThinDOM div 
+  .attr 'class', 'caption'
+  .append ThinDOM 'div' 
+  .attr 'class', 'votes'
+  .append ThinDOM 'a' 
+  .attr 'class': 'up', 'href': '#'
+  .append ThinDOM 'a' 
+  .attr 'class': 'down', 'href': '#'
+  .append ThinDOM 'div'
+  .attr 'class', 'meta'
+  .append ThinDOM 'span'
+  .text author + ' - '
+  .append ThinDOM 'span'
+  .text points + ' point' + plural
+  .append ThinDOM 'p' 
+  .html body 
+  .get() 
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Thindom maintained by <a href="https://github.com/somecallmechief">somecallmechief</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
